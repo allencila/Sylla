@@ -131,16 +131,24 @@ Int Fa 0/5
   switchport access vlan 1
 Int Fa 0/7
   switchport mode access
-  switchport voice vlan 100 
+  switchport voice vlan 100
+  mls qos trust device cisco-phone
  switchport access vlan 1
  end
 
+
+
+
+
+!!IP CAMERAS NEED MAC ADDRRESS RESERVATION FOR FIXED IP!!
+conf t
+ip routing
 ip dhcp pool CAMERA6
-host 10._.50.6 255.255.255.0
-client-identifier aaaa.bbbb.cccc
+host 10.41.50.6 255.255.255.0
+client-identifier 001a.0709.4929
 ip dhcp pool CAMERA8
-host 10._.50.8 255.255.255.0
-client-identifier cccc.dddd.aaaa
+host 10.41.50.8 255.255.255.0
+client-identifier 001a.0706.c2fe
 
 !!cisco unified call manager Express command
 !@@@CUCM-M
