@@ -1,3 +1,40 @@
+TROUBLESHOOTING AND DIAGNOSTIC FOR NETWORK ENGINEERS:
+EXPERIENCE >>> CERTIFIED, LETHAL = XP + CERTIFIED + ENGLISHERO = 3THREESOME
+PING TEST:Via windows Cmd: if Fails
+ping 10.M.1.10              -cable unplugged, wrong IP, Duplicate: 169.254.x.x
+ping 10.m.1.4               -no Vlan, wrong Vlan, sw: sh vlan brief
+ping 10.m.100.4             -type "IP routing" in SW
+ping 10.m.m.4               - check FiberUplinkSwitch = sh run int gi0/1
+                                   "no switchport"
+ping 10.m.m1                -Edge: sh ip in brief
+                            NO routing Configured: CCNA = JOB
+ping 200.0.0.m              NO routing Configured: CCNA = JOB
+ping 200.0.0.K              Klassmate DID NOT CONFIGURE ROUTING
+ping 10.k.k.1               klassmate din not configure switch routing
+ping 10.k.k.4               klassmate din not configure switch routing
+ping 10.k.100.8             klassmate din not configure routing CUCM
+ping 10.k.1.10              klassmate din not configure routing on windows server
+!!!USE IP PHONE TO CALL CLASSMATE!!!!
+Static Routing @CUCm:
+conf t
+ip route 0.0.0.0 0.0.0.0 10.41.100.4 1
+
+Static Routing @COREbaba:
+conf t
+ip route 0.0.0.0 0.0.0.0 10.m.m.1 1
+
+Static Routing Edge:
+conf t
+ip routing
+ip route 10.M.0.0 255.255.0.0 10.M.M.4 1
+ip route 10.11.0.0 255.255.0.0 200.0.0.11 1
+ip route 10.12.0.0 255.255.0.0 200.0.0.12 1
+ip route 10.21.0.0 255.255.0.0 200.0.0.21 1
+ip route 10.22.0.0 255.255.0.0 200.0.0.22 1
+ip route 10.31.0.0 255.255.0.0 200.0.0.31 1
+ip route 10.32.0.0 255.255.0.0 200.0.0.32 1
+!ip route 10.41.0.0 255.255.0.0 200.0.0.41 1
+
 CONFIGURING OSPF AND EIGRP IN REAL WORLD DEVICES, NOT VIRTUAL
 
 task4: CONFIGURING eigrp FOR ALL switches,cms
